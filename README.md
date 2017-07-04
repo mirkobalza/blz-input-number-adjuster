@@ -1,4 +1,4 @@
-# blz-input-number-adjuster 1.0
+# BLZ Input Number Adjuster 1.0
 Use the same spinners for input[number] through all browsers
 
 The input appears through all browsers as an `<input type="number">` on Chrome.
