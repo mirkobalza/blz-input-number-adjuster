@@ -20,7 +20,7 @@
 			changeParameter: "=?",
 			blzClass: "@?"
 		}
-	})
+	});
 	nia.controller('numinadCtrl', function($scope, $timeout){
 		angular.element(".numinad").hover(function() {
 			angular.element(".numinad-addon").css("visibility","visible")
@@ -52,13 +52,13 @@
 				}
 			}
 			setStep();
-		}
+		};
 		$scope.checkNum = function(){
 			var num = isFinite($scope.$ctrl.ngModel);
 			if(!num){
 				$scope.$ctrl.ngModel = 0
 			};
-		}
+		};
 		$scope.pressedUp = function(){
 			if($scope.time==false){
 				$scope.checkNum();
@@ -116,7 +116,7 @@
 			if($scope.$ctrl.ngChange){
 				$scope.$ctrl.ngChange({par:$scope.$ctrl.changeParameter})
 			}
-		}
+		};
 		$scope.increment = function(){
 			if($scope.$ctrl.max!=undefined){
 				if($scope.time&&$scope.$ctrl.ngModel<$scope.$ctrl.max){
@@ -134,10 +134,10 @@
 			if($scope.$ctrl.ngChange){
 				$scope.$ctrl.ngChange({par:$scope.$ctrl.changeParameter})
 			}
-		}
+		};
 		$scope.stopPressing = function() {
 			$scope.time=false;
-		}
+		};
 		$scope.parser = function(){
 			var a = $scope.$ctrl.ngModel;
 			$scope.$ctrl.ngModel = parseInt(a);
