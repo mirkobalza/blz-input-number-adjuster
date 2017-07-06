@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
-title: BLZ Input Number Adjuster
+title: BLZ Numeric Input Adjuster
 gems:
   - jekyll-seo-tag
