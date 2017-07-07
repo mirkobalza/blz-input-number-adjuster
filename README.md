@@ -3,7 +3,7 @@ Use the same spinners for input[number] through all browsers
 
 The input appears through all browsers as an `<input type="number">` on Chrome.
 
-instructions
+Instructions
 ------------
 In order to use *blz-input-number-adjuster* you need AngularJS. 
 First of all inject the module `'blz.numinad'` into the module in which you want to use it.
