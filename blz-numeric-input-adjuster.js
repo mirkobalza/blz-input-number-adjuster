@@ -23,18 +23,16 @@
 		}
 	});
 	nia.controller('numinadCtrl', function($scope, $timeout){
-		angular.element(".numinad").hover(function() {
-			angular.element(".numinad-addon").css("visibility","visible")
-			}, function(){
-			angular.element(".numinad-addon").css("visibility","hidden")
+		angular.element(".numinad").hover(function(){
+			angular.element(this).next().css("visibility","visible")},
+			function(){angular.element(this).next().css("visibility","hidden")
 		});
-		angular.element(".numinad-addon").hover(function() {
-			angular.element(".numinad-addon").css("visibility","visible")
-			}, function(){
-			angular.element(".numinad-addon").css("visibility","hidden")
+		angular.element(".numinad-addon").hover(function(){
+			angular.element(this).css("visibility","visible")},
+			function(){angular.element(this).css("visibility","hidden")
 		});
 		angular.element(".numinad").focus(function(){
-			angular.element(".numinad-addon").css("visibility","visible")
+			angular.element(this).next().css("visibility","visible")
 		});
 		$scope.time=false;
 		$scope.setNuminadAttributes = function(){
